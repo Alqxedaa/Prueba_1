@@ -1,3 +1,4 @@
+import { Login2Component } from './login2/login2.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -11,6 +12,9 @@ import { GenerarQrComponent } from './generar-qr/generar-qr.component';
 import { SharedModule } from '../shared/shared.module';
 import { IonicModule } from '@ionic/angular';
 import { RouterLink } from '@angular/router';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { SeccionAlumnoComponent } from './seccion-alumno/seccion-alumno.component';
+import { SeccionDocenteComponent } from './seccion-docente/seccion-docente.component';
 
 
 @NgModule({
@@ -20,7 +24,11 @@ import { RouterLink } from '@angular/router';
     AlumnoComponent,
     DocenteComponent,
     EscanearQrComponent,
-    GenerarQrComponent
+    GenerarQrComponent,
+    Login2Component,
+    NotfoundComponent,
+    SeccionAlumnoComponent,
+    SeccionDocenteComponent
   ],
   imports: [
     CommonModule,

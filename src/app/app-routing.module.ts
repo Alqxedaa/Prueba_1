@@ -12,6 +12,11 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: '**',
+    redirectTo: 'notfound',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({

@@ -1,9 +1,16 @@
-<ion-content>
-  <app-header></app-header>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Generar QR</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-  <p>
-    generar works!
-  </p>
+<ion-content class="qr-container">
+  <h2>Generador de Código QR</h2>
+  <p>Presiona el botón para generar tu código QR.</p>
 
-  <app-footer></app-footer>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button [routerLink]="['/escanear-qr']">
+      <ion-icon name="qr-code"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

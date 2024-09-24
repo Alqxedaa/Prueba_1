@@ -7,6 +7,10 @@ import { DocenteComponent } from './docente/docente.component';
 import { EscanearQrComponent } from './escanear-qr/escanear-qr.component';
 import { GenerarQrComponent } from './generar-qr/generar-qr.component';
 import { PagesModule } from './pages.module';
+import { Login2Component } from './login2/login2.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { SeccionAlumnoComponent } from './seccion-alumno/seccion-alumno.component';
+import { SeccionDocenteComponent } from './seccion-docente/seccion-docente.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
@@ -15,6 +19,10 @@ const routes: Routes = [
   {path:'docente', component:DocenteComponent},
   {path:'escanear-qr', component:EscanearQrComponent},
   {path:'generar-qr', component:GenerarQrComponent},
+  {path:'login2', component:Login2Component},
+  {path:'notfound', component:NotfoundComponent},
+  {path:'seccion-alumno', component: SeccionAlumnoComponent},
+  {path:'seccion-docente', component: SeccionDocenteComponent},
 ];
 
 @NgModule({
